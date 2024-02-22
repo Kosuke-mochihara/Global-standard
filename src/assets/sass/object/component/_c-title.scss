@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.c-title {
+  color: $blue;
+}
+.c-title__en {
+  font-size: r(100);
+  font-weight: $medium;
+  font-style: italic;
+  line-height: normal;
+  font-family: $sub-font-family;
+  text-transform: uppercase;
+
+  @include mq() {
+    font-size: r(52);
+  }
+}
+
+.c-title__jp {
+  font-size: r(24);
+  font-weight: $bold;
+  line-height: normal;
+
+  @include mq() {
+    font-size: r(16);
+  }
+}
+
+.c-title--white {
+  color: $white;
+}

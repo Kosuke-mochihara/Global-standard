@@ -14,6 +14,12 @@
   line-height: normal;
   position: relative;
   transition: all .3s ease;
+
+  @include mq() {
+    max-width: r(600);
+    font-size: r(14); 
+    line-height: calc(24/14);
+  }
 }
 
 .c-applicationButton::before {

@@ -17,6 +17,11 @@
   line-height: normal;
   position: relative;
   transition: all 0.3s ease;
+  
+  @include mq() {
+    max-width: r(600);
+    font-size: r(16);
+  }
 }
 
 .c-viewButton::before {

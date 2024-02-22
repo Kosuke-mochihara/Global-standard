@@ -8,6 +8,10 @@
   font-style: italic;
   line-height: normal;
   position: relative;
+
+  @include mq() {
+    font-size: r(20);
+  }
 }
 
 .c-moreButton::before {
@@ -18,6 +22,14 @@
   border-radius: 50%;
   border: r(3) solid $yellow;
   right: r(-144);
+  top: 50%;
+  transform: translateY(-50%);
+
+  @include mq() {
+    width: r(40);
+    height: r(40);
+    right: r(-100);
+  }
 }
 
 .c-moreButton::after {
@@ -32,6 +44,12 @@
   left: r(180);
   top: 50%;
   transform: translateY(-50%) skew(45deg);
+
+  @include mq() {
+    width: r(64);
+    left: r(114);
+  
+  }
 }
 
 @media (hover: hover) {

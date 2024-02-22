@@ -1425,6 +1425,9 @@ th {
 	height: 3.1875rem;
 	position: absolute;
 	right: -9rem;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
 	width: 3.1875rem;
 }
 
@@ -1573,6 +1576,29 @@ th {
 .c-text__name {
 	font-family: "Noto Sans JP", sans-serif;
 	font-weight: bold;
+}
+
+.c-title {
+	color: #023E78;
+}
+
+.c-title__en {
+	font-family: "Fira Sans", sans-serif;
+	font-size: 6.25rem;
+	font-style: italic;
+	font-weight: 500;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.c-title__jp {
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.c-title--white {
+	color: #fff;
 }
 
 .c-vertical-line {
@@ -1848,6 +1874,31 @@ a {
 	padding-right: 6%;
 }
 
+.c-applicationButton {
+	font-size: 0.875rem;
+	line-height: 1.7142857143;
+	max-width: 37.5rem;
+}
+
+.c-caseButton {
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	height: 4.5rem;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	max-width: 37.5rem;
+	padding: 0;
+	padding: initial;
+}
+
 .c-lower-head {
 	height: 14.375rem;
 }
@@ -1861,12 +1912,40 @@ a {
 	top: -2.5rem;
 }
 
+.c-moreButton {
+	font-size: 1.25rem;
+}
+
+.c-moreButton::before {
+	height: 2.5rem;
+	right: -6.25rem;
+	width: 2.5rem;
+}
+
+.c-moreButton::after {
+	left: 7.125rem;
+	width: 4rem;
+}
+
 .c-text {
+	font-size: 1rem;
+}
+
+.c-title__en {
+	font-size: 3.25rem;
+}
+
+.c-title__jp {
 	font-size: 1rem;
 }
 
 .c-vertical-line {
 	height: 4.125rem;
+}
+
+.c-viewButton {
+	font-size: 1rem;
+	max-width: 37.5rem;
 }
 
 .p-cards {

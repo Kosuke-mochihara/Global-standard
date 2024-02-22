@@ -10,6 +10,15 @@
   line-height: normal;
   position: relative;
   transition: all .3s ease;
+
+  @include mq() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: initial;
+    max-width: r(600);
+    height: r(72);
+  }
 }
 
 .c-caseButton::before {

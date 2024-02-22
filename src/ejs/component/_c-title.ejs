@@ -1,0 +1,10 @@
+<% if(modifier) {
+    modifier = 'c-title--' + modifier;
+} else {
+    modifier = '';
+} %>
+
+<div class="c-title <%= modifier %>">
+  <p class="c-title__en"><%- titleEn %></p>
+  <h2 class="c-title__jp"><%= titleJp %></h2>
+</div>
