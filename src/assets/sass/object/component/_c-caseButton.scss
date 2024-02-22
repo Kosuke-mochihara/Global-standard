@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.c-caseButton {
+  padding: r(24) r(80);
+  display: inline-block;
+  border: r(1) solid $blue;
+  color: $blue;
+  font-size: r(16);
+  font-weight: $medium;
+  line-height: normal;
+  position: relative;
+  transition: all .3s ease;
+}
+
+.c-caseButton::before {
+  content: "";
+  position: absolute;
+  width: r(20);
+  height: r(14);
+  background-image: url(../images/common/icon-arrow--blue_02.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  right: r(22);
+  transition: all .3s ease;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.c-caseButton:hover {
+  background-color: $blue;
+  color: $white;
+}
+
+
+.c-caseButton:hover::before {
+  background-image: url(../images/common/icon-arrow--white_02.png);
+}
