@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.c-applicationButton {
+  width: 100%;
+  max-width: r(304);
+  height: r(72);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: r(1) solid $blue;
+  color: $blue;
+  font-size: r(16);
+  font-weight: $medium;
+  line-height: normal;
+  position: relative;
+  transition: all .3s ease;
+}
+
+.c-applicationButton::before {
+  content: "";
+  position: absolute;
+  width: r(20);
+  height: r(14);
+  background-image: url(../images/common/icon-arrow--blue_02.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  right: r(20);
+  transition: all .3s ease;
+}
+
+.c-applicationButton:hover {
+  background-color: $blue;
+  color: $white;
+}
+
+
+.c-applicationButton:hover::before {
+  background-image: url(../images/common/icon-arrow--white_02.png);
+}
