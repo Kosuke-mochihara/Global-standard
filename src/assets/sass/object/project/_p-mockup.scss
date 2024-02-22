@@ -1,0 +1,57 @@
+@use "global" as *;
+
+.p-mockup {
+  margin-block: r(100);
+}
+
+.p-mockup__content {
+  margin-top: r(80);
+}
+
+.p-mockup__title {
+  font-size: r(20);
+  font-weight: bold;
+  line-height: normal;
+}
+
+.p-mockup__items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: r(16);
+  gap: r(20);
+
+  @include mq() {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.p-mockup__link--cp1,
+.p-mockup__link--cp2,
+.p-mockup__link--cp3,
+.p-mockup__link--cp4,
+.p-mockup__link--pro1,
+.p-mockup__link--pro2,
+.p-mockup__link--pro3,
+.p-mockup__link--pro4 {
+  pointer-events: none;
+}
+
+.p-mockup__link {
+  padding: r(20);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: r(1) solid #e0e0e0;
+  border-radius: r(10);
+  background-color: #f7f7f7;
+  transition: all 0.2s;
+}
+
+@media (hover: hover) {
+  .p-mockup__link:hover {
+    background-color: #333;
+    color: #fff;
+  }
+}

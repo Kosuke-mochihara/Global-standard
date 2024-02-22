@@ -1,0 +1,71 @@
+@use "global" as *;
+.c-accordion {
+  border: r(2) solid $base-color;
+}
+.c-accordion summary::-webkit-details-marker {
+  display: none;
+}
+.c-accordion__title {
+  padding: r(20) r(40);
+  font-size: r(18);
+  background: $base-color;
+  color: $white;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.c-accordion__icon i {
+  transition: transform 0.3s;
+  right: 0;
+  position: relative;
+  font-size: r(16);
+}
+.c-accordion.is-open .c-accordion__icon i {
+  transform: rotate(-180deg);
+}
+.c-accordion__content {
+  font-size: r(18);
+  background: $white;
+  color: $base-color;
+  text-decoration: none;
+  overflow: hidden;
+}
+.c-accordion__content-inner {
+  padding: r(20) r(40);
+}
+
+/* .c-accordion--type1 */
+.c-accordion--type1 .c-accordion__title {
+  background: $white;
+  color: $base-color;
+  transition: border 0.3s;
+}
+.c-accordion--type1 .c-accordion__icon i {
+  font-size: r(20);
+}
+
+/* .c-accordion--type2 */
+.c-accordion--type2 .c-accordion__title {
+  position: relative;
+}
+.c-accordion--type2 .c-accordion__icon::before,
+.c-accordion--type2 .c-accordion__icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: r(30);
+  width: r(15);
+  height: r(2);
+  background: $white;
+  transform: translate(-50%, -50%);
+  transition: 0.3s all;
+}
+.c-accordion--type2 .c-accordion__icon::after {
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+.c-accordion--type2.is-open .c-accordion__icon::after {
+  transform: translate(-50%, -50%) rotate(0deg);
+}

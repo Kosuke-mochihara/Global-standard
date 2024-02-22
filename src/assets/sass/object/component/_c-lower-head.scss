@@ -1,0 +1,58 @@
+@use "global" as *;
+
+.c-lower-head {
+  position: relative;
+  height: r(460);
+  @include mq() {
+    height: r(230);
+  }
+}
+.c-lower-head::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: r(150);
+  width: 100%;
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(90, 90, 90, 1));
+}
+.c-lower-head__bg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.c-lower-head__inner {
+  max-width: r(780);
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: $padding-pc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.c-lower-head__title {
+  font-size: r(33);
+  display: flex;
+  justify-content: flex-start;
+  writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  background: $base-color;
+  color: $white;
+  padding-block: r(5);
+  padding-top: r(20);
+  letter-spacing: r(5);
+  height: r(310);
+  @include mq() {
+    padding-top: r(10);
+    font-size: r(22);
+    height: r(210);
+    position: relative;
+    top: r(-40);
+    right: r(20);
+  }
+}

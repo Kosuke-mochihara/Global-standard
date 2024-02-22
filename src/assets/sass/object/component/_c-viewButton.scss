@@ -1,0 +1,45 @@
+@use "global" as *;
+
+.c-viewButton {
+  display: inline-flex;
+  color: $yellow;
+  background-color: transparent;
+  border: r(1) solid $yellow;
+  width: 100%;
+  max-width: r(315);
+  padding-block: r(35);
+  justify-content: center;
+  align-items: center;
+  font-family: $sub-color;
+  font-size: r(24);
+  font-weight: $medium;
+  font-style: italic;
+  line-height: normal;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.c-viewButton::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: r(32);
+  transform: translateY(-50%);
+  width: r(20);
+  height: r(14);
+  background-image: url(../images/common/icon-arrow--yellow.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease;
+}
+
+.c-viewButton:hover {
+  color: $base-color;
+  background-color: $yellow;
+}
+
+.c-viewButton:hover::before {
+  background-image: url(../images/common/icon-arrow--blue.png);
+  right: r(28);
+}

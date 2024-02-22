@@ -1,0 +1,17 @@
+<% if(pageFlag == "top") { %>
+<h1 class="p-header__logo">
+  ロゴ
+  <picture>
+    <source srcset="./assets/images/common/logo.webp" type="image/webp" width="180" height="50">
+    <img src="./assets/images/common/logo.png" alt="" decoding="async" width="180" height="50">
+  </picture>
+</h1>
+<% } else { %>
+<a href="/" class="p-header__logo">
+  ロゴ
+  <picture>
+    <source srcset="./assets/images/common/logo.webp" type="image/webp" width="180" height="50">
+    <img src="./assets/images/common/logo.png" alt="" decoding="async" width="180" height="50">
+  </picture>
+</a>
+<% } %>

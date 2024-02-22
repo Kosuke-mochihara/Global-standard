@@ -1,0 +1,52 @@
+<% const page = "top" %>
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include('./common/_head', {meta: data.pageMeta[page]}) %>
+
+  <body>
+    <%- include('./common/_p-header', {page: page}) %>
+    <main class="p-main">
+      <div class="l-inner">
+        <div class="p-mockup">
+          <div class="p-mockup__content">
+            <p class="p-mockup__title">コンポーネント一覧</p>
+            <ul class="p-mockup__items">
+              <li class="p-mockup__item">
+                <a href="cp1.html" class="p-mockup__link p-mockup__link--cp1" target="_blank" rel="noopener noreferrer">コンポーネント01</a>
+              </li>
+              <li class="p-mockup__item">
+                <a href="cp2.html" class="p-mockup__link p-mockup__link--cp2" target="_blank" rel="noopener noreferrer">コンポーネント02</a>
+              </li>
+              <li class="p-mockup__item">
+                <a href="cp3.html" class="p-mockup__link p-mockup__link--cp3" target="_blank" rel="noopener noreferrer">コンポーネント03</a>
+              </li>
+              <li class="p-mockup__item">
+                <a href="cp4.html" class="p-mockup__link p-mockup__link--cp4" target="_blank" rel="noopener noreferrer">コンポーネント04</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="p-mockup__content">
+            <p class="p-mockup__title">プロジェクト一覧</p>
+            <ul class="p-mockup__items">
+              <li class="p-mockup__item">
+                <a href="pro1" class="p-mockup__link p-mockup__link--pro1" target="_blank" rel="noopener noreferrer">プロジェクト01</a>
+              </li>
+              <li class="p-mockup__item">
+                <a href="pro2" class="p-mockup__link p-mockup__link--pro2" target="_blank" rel="noopener noreferrer">プロジェクト02</a>
+              </li>
+              <li class="p-mockup__item">
+                <a href="pro3" class="p-mockup__link p-mockup__link--pro3" target="_blank" rel="noopener noreferrer">プロジェクト03</a>
+              </li>
+              <li class="p-mockup__item">
+                <a href="pro4" class="p-mockup__link p-mockup__link--pro4" target="_blank" rel="noopener noreferrer">プロジェクト04</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="l-scroll-top"><%- include('./component/_c-scroll-top') %></div>
+    <%- include('./common/_p-footer', {page: page}) %>
+  </body>
+</html>

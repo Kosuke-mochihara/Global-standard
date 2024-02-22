@@ -1,0 +1,17 @@
+<div class="c-slide">
+  <div class="splide splide<%= num %>" aria-label="Splideの基本的なHTML">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <% for(i = 0; i < 5; i++){ %>
+        <li class="splide__slide">
+          <picture>
+            <source srcset="/assets/images/slide/slide0<%= i + 1 %>.webp" type="image/webp">
+            <img src="/assets/images/slide/slide0<%= i + 1 %>.jpg" alt="" width="1000" height="667" loading="lazy"
+              decoding="async">
+          </picture>
+        </li>
+        <% } %>
+      </ul>
+    </div>
+  </div>
+</div>

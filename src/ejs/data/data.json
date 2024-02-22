@@ -1,0 +1,158 @@
+{
+  "data": {
+    "pageMeta": {
+      "top": {
+        "url": "https://example.com",
+        "siteName": "コンポーネント",
+        "pageTitle": "コンポーネント",
+        "description": "コンポーネントリストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "about": {
+        "url": "https://example.com",
+        "siteName": "会社概要｜Global standard",
+        "pageTitle": "会社概要｜Global standard",
+        "description": "Global standardリストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "service": {
+        "url": "https://example.com",
+        "siteName": "サービス｜Global standard",
+        "pageTitle": "サービス｜Global standard",
+        "description": "Global standardリストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "news": {
+        "url": "https://example.com",
+        "siteName": "お知らせ｜Global standard",
+        "pageTitle": "お知らせ｜Global standard",
+        "description": "Global standardリストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "news-single": {
+        "url": "https://example.com",
+        "siteName": "お知らせ詳細｜Global standard",
+        "pageTitle": "お知らせ詳細｜Global standard",
+        "description": "Global standardリストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "case": {
+        "url": "https://example.com",
+        "siteName": "導入事例｜Global standard",
+        "pageTitle": "導入事例｜Global standard",
+        "description": "Global standardリストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "download": {
+        "url": "https://example.com",
+        "siteName": "ダウンロード｜Global standard",
+        "pageTitle": "ダウンロード｜Global standard",
+        "description": "Global standardリストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "download-thanks": {
+        "url": "https://example.com",
+        "siteName": "ダウンロード完了｜Global standard",
+        "pageTitle": "ダウンロード完了｜Global standard",
+        "description": "Global standardリストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "contact": {
+        "url": "https://example.com",
+        "siteName": "お問い合わせ｜Global standard",
+        "pageTitle": "お問い合わせ｜Global standard",
+        "description": "Global standardリストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "contact-thanks": {
+        "url": "https://example.com",
+        "siteName": "お問い合わせ完了｜Global standard",
+        "pageTitle": "お問い合わせ完了｜Global standard",
+        "description": "Global standardリストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "cp0": {
+        "url": "https://example.com",
+        "siteName": "cp0｜Global standard",
+        "pageTitle": "cp0｜Global standard",
+        "description": "Global standardリストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "cp1": {
+        "url": "https://example.com",
+        "siteName": "cp1｜Global standard",
+        "pageTitle": "cp1｜Global standard",
+        "description": "Global standardリストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "cp2": {
+        "url": "https://example.com",
+        "siteName": "cp2｜Global standard",
+        "pageTitle": "cp2｜Global standard",
+        "description": "Global standardリストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "cp3": {
+        "url": "https://example.com",
+        "siteName": "cp_3｜Global standard",
+        "pageTitle": "cp_3｜Global standard",
+        "description": "Global standardリストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "cp4": {
+        "url": "https://example.com",
+        "siteName": "cp_4｜Global standard",
+        "pageTitle": "cp_4｜Global standard",
+        "description": "Global standardリストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "pro1": {
+        "url": "https://example.com",
+        "siteName": "pro_1｜Global standard",
+        "pageTitle": "pro_1｜Global standard",
+        "description": "Global standardリストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "pro2": {
+        "url": "https://example.com",
+        "siteName": "pro_2｜Global standard",
+        "pageTitle": "pro_2｜Global standard",
+        "description": "Global standardリストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "pro3": {
+        "url": "https://example.com",
+        "siteName": "pro_3｜Global standard",
+        "pageTitle": "pro_3｜Global standard",
+        "description": "Global standardリストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      },
+      "pro4": {
+        "url": "https://example.com",
+        "siteName": "pro_4｜Global standard",
+        "pageTitle": "pro_4｜Global standard",
+        "description": "Global standardリストの概要です",
+        "keywords": "",
+        "ogpImage": "https://example.com/images/common/ogp.jpg"
+      }
+    }
+  }
+}

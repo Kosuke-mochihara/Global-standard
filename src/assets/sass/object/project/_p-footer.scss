@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.p-footer {
+  background: $sub-color;
+  padding-top: r(50);
+  padding-bottom: r(20);
+}
+.p-footer__inner {
+  display: grid;
+  justify-content: center;
+}
+.p-footer__address {
+  text-align: center;
+  line-height: 1.6;
+}
+.p-footer__copy {
+  margin-top: r(30);
+  text-align: center;
+}

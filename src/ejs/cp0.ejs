@@ -1,0 +1,266 @@
+<% const page = "cp0" %>
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head', {meta: data.pageMeta[page]}) %>
+
+<body>
+  <%- include('./common/_p-header', {page: page}) %>
+  <main class="p-main">
+    <div class="l-inner">
+      <section class="p-component l-section">
+        <div class="p-component__mainTitle">
+          <h2 class="c-heading c-heading--2">カード</h2>
+        </div>
+        <div class="p-component__previewTitle">
+          <h3 class="c-heading c-heading--3">.c-card</h3>
+        </div>
+        <div class="p-component__preview">
+          <%- include('./component/_c-card', {
+            image_path: "https://picsum.photos/600/400.jpg",
+            time: "2023-05-01",
+            title: "タイトルが入ります",
+            text: "テキストが入ります。テキストが入ります。テキストが入ります。",
+            modifier: ""}
+            ) %>
+        </div>
+        <div class="p-component__previewTitle">
+          <h3 class="c-heading c-heading--3">.c-card--shadow</h3>
+        </div>
+        <div class="p-component__preview">
+          <%- include('./component/_c-card', {
+            image_path: "https://picsum.photos/600/400.jpg",
+            time: "2023-05-01",
+            title: "タイトルが入ります",
+            text: "テキストが入ります。テキストが入ります。テキストが入ります。",
+            modifier: "shadow"}
+            ) %>
+        </div>
+        <div class="p-component__previewTitle">
+          <h3 class="c-heading c-heading--3">.c-card--horizon</h3>
+        </div>
+        <div class="p-component__preview">
+          <%- include('./component/_c-card', {
+            image_path: "https://picsum.photos/600/400.jpg",
+            time: "2023-05-01",
+            title: "タイトルが入ります",
+            text: "テキストが入ります。テキストが入ります。テキストが入ります。",
+            modifier: "horizon"}
+            ) %>
+        </div>
+        <div class="p-component__previewTitle">
+          <h3 class="c-heading c-heading--3">.p-cards</h3>
+        </div>
+        <div class="p-component__preview">
+          <%- include('./project/_p-cards', {num: 6}) %>
+        </div>
+      </section>
+      <section class="p-component l-section">
+        <div class="p-component__mainTitle">
+          <h2 class="c-heading c-heading--2">ボタン</h2>
+        </div>
+        <div class="p-component__previewTitle">
+          <h3 class="c-heading c-heading--3">.c-button</h3>
+        </div>
+        <div class="p-component__preview">
+          <%- include('./component/_c-button', {text: "ボタン", modifier: ""}) %>
+        </div>
+        <div class="p-component__previewTitle">
+          <h3 class="c-heading c-heading--3">.c-button--arrow</h3>
+        </div>
+        <div class="p-component__preview">
+          <%- include('./component/_c-button', {text: "矢印付きボタン", modifier: "arrow"}) %>
+        </div>
+      </section>
+      <section class="p-component l-section">
+        <div class="p-component__mainTitle">
+          <h2 class="c-heading c-heading--2">リスト</h2>
+        </div>
+        <div class="p-component__previewTitle">
+          <h3 class="c-heading c-heading--3">.c-list</h3>
+        </div>
+        <div class="p-component__preview">
+          <ul class="c-list">
+            <li>リスト1</li>
+            <li>
+              リスト2
+              <ul>
+                <li>子リスト1</li>
+                <li>
+                  子リスト2
+                  <ul>
+                    <li>孫リスト1</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>リスト3</li>
+          </ul>
+        </div>
+        <div class="p-component__previewTitle">
+          <h3 class="c-heading c-heading--3">.c-list--decimal</h3>
+        </div>
+        <div class="p-component__preview">
+          <ul class="c-list c-list--decimal">
+            <li>リスト1</li>
+            <li>
+              リスト2
+              <ul>
+                <li>子リスト1</li>
+                <li>
+                  子リスト2
+                  <ul>
+                    <li>孫リスト1</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>リスト3</li>
+          </ul>
+        </div>
+        <div class="p-component__previewTitle">
+          <h3 class="c-heading c-heading--3">.c-list--arrow-start</h3>
+        </div>
+        <div class="p-component__preview">
+          <ul class="c-list c-list--arrow-start">
+            <li>リスト1</li>
+            <li>
+              リスト2
+              <ul>
+                <li>子リスト1</li>
+                <li>
+                  子リスト2
+                  <ul>
+                    <li>孫リスト1</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>リスト3</li>
+          </ul>
+        </div>
+      </section>
+      <section class="p-component l-section">
+        <div class="p-component__mainTitle">
+          <h2 class="c-heading c-heading--2">ドロワー</h2>
+        </div>
+        <div class="p-component__previewTitle">
+          <h3 class="c-heading c-heading--3">.c-drawer</h3>
+        </div>
+        <div class="p-component__preview">
+          <%- include('./component/_c-drawer', {modifier: "", num: 1}) %>
+        </div>
+        <div class="p-component__previewTitle">
+          <h3 class="c-heading c-heading--3">.c-drawer--open-right</h3>
+        </div>
+        <div class="p-component__preview">
+          <%- include('./component/_c-drawer', {modifier: "open-right", num: 2}) %>
+        </div>
+        <div class="p-component__previewTitle">
+          <h3 class="c-heading c-heading--3">.c-drawer--open-left</h3>
+        </div>
+        <div class="p-component__preview">
+          <%- include('./component/_c-drawer', {modifier: "open-left", num: 3}) %>
+        </div>
+        <div class="p-component__previewTitle">
+          <h3 class="c-heading c-heading--3">.c-drawer--open-top</h3>
+        </div>
+        <div class="p-component__preview">
+          <%- include('./component/_c-drawer', {modifier: "open-top", num: 4}) %>
+        </div>
+      </section>
+      <section class="p-component l-section">
+        <div class="p-component__mainTitle">
+          <h2 class="c-heading c-heading--2">アコーディオン</h2>
+        </div>
+        <div class="p-component__previewTitle">
+          <h3 class="c-heading c-heading--3">.c-accordion</h3>
+        </div>
+        <div class="p-component__preview">
+          <%- include('./component/_c-accordion', {
+            title: "アコーディオンのタイトル",
+            text: "アコーディオンのテキストがはいります。アコーディオンのテキストがはいります。アコーディオンのテキストがはいります。アコーディオンのテキストがはいります。アコーディオンのテキストがはいります。アコーディオンのテキストがはいります。",
+            icon: '<i class="fa-solid fa-chevron-down"></i>',
+            modifier: ""
+          }) %>
+        </div>
+        <div class="p-component__previewTitle">
+          <h3 class="c-heading c-heading--3">.c-accordion--type1</h3>
+        </div>
+        <div class="p-component__preview">
+          <%- include('./component/_c-accordion', {
+            title: "アコーディオンのタイトル",
+            text: "アコーディオンのテキストがはいります。アコーディオンのテキストがはいります。アコーディオンのテキストがはいります。アコーディオンのテキストがはいります。アコーディオンのテキストがはいります。アコーディオンのテキストがはいります。",
+            icon: '<i class="fa-solid fa-circle-chevron-down"></i>',
+            modifier: "type1"
+          }) %>
+        </div>
+        <div class="p-component__previewTitle">
+          <h3 class="c-heading c-heading--3">.c-accordion--type2</h3>
+        </div>
+        <div class="p-component__preview">
+          <%- include('./component/_c-accordion', {
+            title: "アコーディオンのタイトル",
+            text: "アコーディオンのテキストがはいります。アコーディオンのテキストがはいります。アコーディオンのテキストがはいります。アコーディオンのテキストがはいります。アコーディオンのテキストがはいります。アコーディオンのテキストがはいります。",
+            icon: "",
+            modifier: "type2"
+          }) %>
+        </div>
+      </section>
+        <div class="p-component__preview">
+          <%- include('./component/_c-accordion', {
+            title: "アコーディオンのタイトル",
+            text: "アコーディオンのテキストがはいります。アコーディオンのテキストがはいります。アコーディオンのテキストがはいります。アコーディオンのテキストがはいります。アコーディオンのテキストがはいります。アコーディオンのテキストがはいります。",
+            icon: '<i class="fa-solid fa-circle-chevron-down"></i>',
+            modifier: "type1"
+          }) %>
+        </div>
+        <div class="p-component__previewTitle">
+          <h3 class="c-heading c-heading--3">.c-accordion--type2</h3>
+        </div>
+        <div class="p-component__preview">
+          <%- include('./component/_c-accordion', {
+            title: "アコーディオンのタイトル",
+            text: "アコーディオンのテキストがはいります。アコーディオンのテキストがはいります。アコーディオンのテキストがはいります。アコーディオンのテキストがはいります。アコーディオンのテキストがはいります。アコーディオンのテキストがはいります。",
+            icon: "",
+            modifier: "type2"
+          }) %>
+        </div>
+      </section>
+      <section class="p-component l-section">
+        <div class="p-component__mainTitle">
+          <h2 class="c-heading c-heading--2">スライダー</h2>
+        </div>
+        <div class="p-component__previewTitle">
+          <h3 class="c-heading c-heading--3">.c-slide</h3>
+        </div>
+        <div class="p-component__preview">
+          <%- include('./component/_c-slide', {num: "01"}) %>
+        </div>
+        <div class="p-component__previewTitle">
+          <h3 class="c-heading c-heading--3">.c-slide--auto</h3>
+        </div>
+        <div class="p-component__preview">
+          <%- include('./component/_c-slide', {num: "02"}) %>
+        </div>
+      </section>
+
+      <section class="p-component l-section">
+        <div class="p-component__mainTitle">
+          <h2 class="c-heading c-heading--2">タブ</h2>
+        </div>
+        <div class="p-component__previewTitle">
+          <h3 class="c-heading c-heading--3">.c-tab</h3>
+        </div>
+        <div class="p-component__preview">
+          <%- include('./component/_c-tab' ) %>
+        </div>
+      </section>
+    </div>
+  </main>
+  <div class="l-scroll-top">
+    <%- include('./component/_c-scroll-top') %>
+  </div>
+  <%- include('./common/_p-footer', {page: page}) %>
+</body>
+
+</html>

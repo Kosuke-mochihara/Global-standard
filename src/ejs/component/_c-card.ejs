@@ -1,0 +1,37 @@
+<% if(modifier) {
+    modifier = 'c-card--' + modifier;
+} else {
+    modifier = '';
+}
+
+// 2023-05-01 のような日付を 2023.5.1 のような形式に変換する
+const display_time = () => {
+  const display_time = time.replace(/-/g, '.');
+  return display_time;
+}
+
+// https://picsum.photos/600/400.jpg のような画像パスを https://picsum.photos/600/400.webp に変換する
+// または /image/common/ogp.jpg のような画像パスを /image/common/ogp.webp に変換する
+const webp_image_path = () => {
+  const webp_image_path = image_path.replace(/(\.jpg|\.png|\.gif)/, '.webp');
+  return webp_image_path;
+}
+
+%>
+<div class="c-card <%= modifier %>">
+  <picture class="c-card__image">
+    <source srcset="<%= webp_image_path() %>" type="image/webp">
+    <img src="<%= image_path %>" alt="<%= title %>">
+  </picture>
+  <div class="c-card__body">
+    <time class="c-card__time" datetime="<%= time %>">
+      <%= display_time() %>
+    </time>
+    <h3 class="c-card__title">
+      <%= title %>
+    </h3>
+    <p class="c-card__text">
+      <%= text %>
+    </p>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+@use "sass:math";
+
+// PCファースト、SPファーストを選ぶ
+$rules: (
+  sp: "min",
+  pc: "max",
+);
+$rule: map-get($rules, "pc"); // PCファースト：pc、SPファースト：sp
+
+//ブレイクポイント
+$breakpoints: (
+  sm: 600,
+  md: 768,
+  lg: 1024,
+  inner: 1150,
+  xl: 1449,
+);
+
+//メディアクエリー
+$mediaquerys: (
+  sm: map-get($breakpoints, "sm"),
+  md: map-get($breakpoints, "md"),
+  lg: map-get($breakpoints, "lg"),
+  inner: map-get($breakpoints, "inner"),
+  xl: map-get($breakpoints, "xl"),
+);
+
+// @include mq(){}で書くとブレークポイントが反映される（初期値はmd）
+@mixin mq($mediaquery: md) {
+  $breakpoint: map-get($mediaquerys, $mediaquery);
+
+  @media screen and (#{$rule}-width: #{$breakpoint}px) {
+    @content;
+  }
+}

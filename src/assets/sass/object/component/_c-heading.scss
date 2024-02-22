@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.c-heading {
+  font-weight: bold;
+}
+
+.c-heading--2 {
+  font-size: r(24);
+  padding-block: r(10);
+  border-bottom: r(3) solid $base-color;
+}
+
+.c-heading--3 {
+  font-size: r(20);
+  padding: r(5) 0 r(5) r(10);
+  border-left: r(5) solid $base-color;
+}

@@ -1,0 +1,13 @@
+<div class="p-cards">
+  <% for (let i = 0; i < num; i++) { %>
+  <div class="p-cards__card">
+    <%- include('../component/_c-card', {
+        image_path: "https://picsum.photos/600/400.jpg",
+        time: "2023-05-01",
+        title: "タイトル" + (i + 1) + "が入ります",
+        text: "テキストが入ります。テキストが入ります。テキストが入ります。",
+        modifier: ""}
+        ) %>
+  </div>
+  <% } %>
+</div>

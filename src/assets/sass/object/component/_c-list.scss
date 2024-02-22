@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.c-list,
+.c-list li ul {
+  padding-left: r(30);
+  padding-right: r(10);
+  list-style-type: disc;
+}
+.c-list li {
+  margin-bottom: r(15);
+}
+.c-list li ul li {
+  margin-top: r(15);
+}
+
+.c-list--decimal,
+.c-list--decimal li ul {
+  list-style-type: decimal;
+}
+
+.c-list--arrow-start,
+.c-list--arrow-start li ul {
+  list-style-type: none;
+}
+.c-list--arrow-start li {
+  position: relative;
+}
+.c-list--arrow-start li::before {
+  content: "\f054";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  font-size: r(12);
+  top: r(2);
+  left: r(-16);
+}

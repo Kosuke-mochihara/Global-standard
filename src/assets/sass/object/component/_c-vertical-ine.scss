@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.c-vertical-line {
+  width: r(1);
+  height: r(100);
+  background: $base-color;
+  margin-inline: auto;
+  @include mq() {
+    height: r(66);
+  }
+}

@@ -1,0 +1,57 @@
+@use "global" as *;
+
+.c-moreButton {
+  display: inline-block;
+  color: $white;
+  font-size: r(32);
+  font-weight: $medium;
+  font-style: italic;
+  line-height: normal;
+  position: relative;
+}
+
+.c-moreButton::before {
+  content: "";
+  position: absolute;
+  width: r(51);
+  height: r(51);
+  border-radius: 50%;
+  border: r(3) solid $yellow;
+  right: r(-144);
+}
+
+.c-moreButton::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-bottom: r(2) solid $white;
+  border-right: r(2) solid $white;
+  transition: .3s;
+  width: r(95);
+  height: r(10);
+  left: r(180);
+  top: 50%;
+  transform: translateY(-50%) skew(45deg);
+}
+
+@media (hover: hover) {
+  .c-moreButton:hover::after {
+    width: r(145);
+    height: r(10);
+    transition: .3s;
+    opacity: 1;
+  }
+}
+
+.c-moreButton--accent {
+  color: $base-color;
+}
+
+.c-moreButton--accent::before {
+  background-color: $yellow;
+}
+
+.c-moreButton--accent::after {
+  border-bottom: r(2) solid $base-color;
+  border-right: r(2) solid $base-color;
+}

@@ -1,0 +1,16 @@
+@use "global" as *;
+
+// インナー
+.l-inner {
+  margin: 0 auto;
+  width: 100%;
+  height: inherit;
+  max-width: calc($l-inner + $padding-pc * 2);
+  padding-right: $padding-pc;
+  padding-left: $padding-pc;
+  @include mq(md) {
+    padding-right: $padding-sp;
+    padding-left: $padding-sp;
+    max-width: r(600);
+  }
+}

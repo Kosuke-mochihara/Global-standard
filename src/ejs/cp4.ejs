@@ -1,0 +1,19 @@
+<% const page = "cp4" %>
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head', {meta: data.pageMeta[page]}) %>
+
+<body>
+  <%- include('./common/_p-header', {page: page}) %>
+  <main class="p-main">
+    <div class="l-inner">
+      
+    </div>
+  </main>
+  <div class="l-scroll-top">
+    <%- include('./component/_c-scroll-top') %>
+  </div>
+  <%- include('./common/_p-footer', {page: page}) %>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+@use "global" as *;
+.p-header {
+  width: 100%;
+}
+.p-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: r(10);
+  @include mq() {
+    max-width: 100%;
+  }
+}
+.p-header__logo {
+  font-size: 0;
+}
+
+.p-header__nav {
+  @include mq() {
+    display: none;
+  }
+}
+
+.p-header__lists {
+  display: flex;
+}
+.p-header__list a {
+  padding: r(10);
+}
+
+.p-header__drawer {
+  @include mq() {
+    z-index: 200;
+    display: block;
+    position: fixed;
+    right: r(10);
+    top: r(10);
+  }
+}

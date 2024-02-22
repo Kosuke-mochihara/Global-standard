@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.c-text {
+  font-size: r(17);
+  line-height: calc(42 / 17);
+  letter-spacing: r(-1);
+  text-align: justify;
+  @include mq() {
+    font-size: r(16);
+  }
+}
+
+.c-text__name {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bold;
+}

@@ -1,0 +1,39 @@
+<% if(modifier) {
+  modifier = ' c-drawer--' + modifier;
+} else {
+  modifier = '';
+} %>
+
+<div class="c-drawer<%= modifier %>">
+  <button class="c-drawer__button js-drawerButton" type="button" aria-expanded="false">
+    <span class="c-drawer__line">メニューを開閉する</span>
+  </button>
+  <div class="c-drawer__modal" id="modal-drawer<%= num %>" aria-hidden="true">
+    <div tabindex="-1" data-micromodal-close>
+      <div role="dialog" aria-modal="true">
+        <nav id="modal-drawer-content<%= num %>">
+          <ul class="c-drawer__lists">
+            <li class="c-drawer__list">
+              <a class="c-drawer__link" href="">メニュー</a>
+            </li>
+            <li class="c-drawer__list">
+              <a class="c-drawer__link" href="">メニュー</a>
+            </li>
+            <li class="c-drawer__list">
+              <a class="c-drawer__link" href="">メニュー</a>
+            </li>
+            <li class="c-drawer__list">
+              <a class="c-drawer__link" href="">メニュー</a>
+            </li>
+            <li class="c-drawer__list">
+              <a class="c-drawer__link" href="">メニュー</a>
+            </li>
+            <li class="c-drawer__list">
+              <a class="c-drawer__link" href="">メニュー</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>

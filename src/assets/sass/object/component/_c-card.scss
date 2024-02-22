@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.c-card {
+}
+
+.c-card__body {
+  padding: r(15);
+}
+.c-card__time {
+  font-size: r(14);
+}
+.c-card__title {
+  font-weight: bold;
+  font-size: r(20);
+  margin-top: r(10);
+}
+.c-card__text {
+  margin-top: r(10);
+}
+
+.c-card--shadow {
+  box-shadow: 0 0 r(5) 0 rgba($color: #000000, $alpha: 0.3);
+}
+
+.c-card--horizon {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.c-card--horizon .c-card__body {
+  padding: r(10) r(15);
+}
