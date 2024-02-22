@@ -1,0 +1,27 @@
+<% if(modifier) {
+  modifier = 'c-serviceCard-lower--' + modifier;
+} else {
+  modifier = '';
+} %>
+
+<div class="c-serviceCard-lower <%= modifier %>">
+  <p class="c-serviceCard-lower__title"><%= title %></p>
+  <p class="c-serviceCard-lower__subTitle"><%- subTitle %></p>
+  <div class="c-serviceCard-lower__textBlock">
+    <p class="c-serviceCard-lower__text"><%- text01 %></p>
+    <p class="c-serviceCard-lower__text"><%- text02 %></p>
+  </div>
+  <dl class="c-serviceCard-lower__dl">
+    <div class="c-serviceCard-lower__item">
+      <dt class="c-serviceCard-lower__dt">対象</dt>
+      <dd class="c-serviceCard-lower__dd"><%= dd01 %></dd>
+    </div>
+    <div class="c-serviceCard-lower__item">
+      <dt class="c-serviceCard-lower__dt">費用</dt>
+      <dd class="c-serviceCard-lower__dd"><%= dd02 %></dd>
+    </div>
+  </dl>
+  <div class="c-serviceCard-lower__button">
+    <%- include('../component/_c-applicationButton', {modifier: ""}) %>
+  </div>
+</div>

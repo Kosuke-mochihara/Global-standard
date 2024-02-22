@@ -1,0 +1,127 @@
+@use "global" as *;
+
+.c-serviceCard-lower {
+  width: 100%;
+  max-width: r(590);
+  padding: r(82) r(40) r(60);
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1608);
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+
+  @include mq() {
+    max-width: r(600);
+    padding: r(40) r(20) r(40);
+  }
+}
+
+.c-serviceCard-lower::before {
+  position: absolute;
+  font-size: r(100);
+  font-weight: $medium;
+  font-family: $sub-font-family;
+  font-style: italic;
+  color: $blue;
+  line-height: normal;
+  left: r(58);
+  top: r(-50);
+
+  @include mq() {
+    font-size: r(68);
+    left: r(20);
+    top: r(-45);
+
+  }
+}
+
+.c-serviceCard-lower--first::before {
+  content: "01";
+}
+
+.c-serviceCard-lower--second::before {
+  content: "02";
+}
+
+.c-serviceCard-lower--third::before {
+  content: "03";
+}
+
+.c-serviceCard-lower__title {
+  font-size: r(40);
+  font-weight: $bold;
+  line-height: normal;
+
+  @include mq() {
+    font-size: r(28);
+  }
+}
+
+.c-serviceCard-lower__subTitle {
+  font-size: r(16);
+  font-weight: $medium;
+  font-style: italic;
+  line-height: normal;
+  color: $blue;
+
+  @include mq() {
+    font-size: r(14);
+  }
+}
+
+.c-serviceCard-lower__textBlock {
+  margin-top: r(59);
+
+  @include mq() {
+    margin-top: r(32);
+  }
+}
+
+.c-serviceCard-lower__text {
+  font-size: r(14);
+  font-weight: $medium;
+  line-height: calc(24/14);
+  text-align: justify;
+}
+
+.c-serviceCard-lower__text:nth-child(n+2) {
+  padding-top: r(26);
+}
+
+.c-serviceCard-lower__dl {
+  margin-top: r(58);
+
+  @include mq() {
+    margin-top: r(32);
+  }
+}
+
+.c-serviceCard-lower__item {
+  font-size: r(14);
+  align-items: center;
+  display: grid;
+  grid-template-columns: r(80) 1fr;
+  padding-block: r(32);
+  border-top: r(1) solid $gray;
+}
+
+.c-serviceCard-lower__item:last-child {
+  border-bottom: r(1) solid $gray;
+}
+
+.c-serviceCard-lower__dt {
+  font-weight: $bold;
+  line-height: normal;
+}
+
+.c-serviceCard-lower__dd {
+  font-weight: $medium;
+  line-height: calc(24/14);
+}
+
+.c-serviceCard-lower__button {
+  margin-top: r(60);
+  text-align: center;
+
+  @include mq() {
+    margin-top: r(32);
+  }
+}
