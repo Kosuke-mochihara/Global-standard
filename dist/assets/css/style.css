@@ -1460,6 +1460,109 @@ th {
 	border-right: 0.125rem solid #1A1A1A;
 }
 
+.c-mvLower {
+	height: 15.625rem;
+	position: relative;
+	width: 100%;
+}
+
+.c-mvLower::after {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
+
+.c-mvLower--01::after {
+	background-image: url(../images/common/mv-lower_01.jpg);
+}
+
+.c-mvLower--02::after {
+	background-image: url(../images/common/mv-lower_02.jpg);
+}
+
+.c-mvLower--03::after {
+	background-image: url(../images/common/mv-lower_03.jpg);
+}
+
+.c-mvLower--04::after {
+	background-image: url(../images/common/mv-lower_04.jpg);
+}
+
+.c-mvLower--05::after {
+	background-image: url(../images/common/mv-lower_05.jpg);
+}
+
+.c-mvLower::before {
+	background-image: url(../images/common/lower-mv-decoration.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 22.8125rem;
+	z-index: 10;
+}
+
+.c-mvLower__bg {
+	background-color: rgba(26, 26, 26, 0.2);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+}
+
+.c-mvLower__textBlock {
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	left: min(18%, 50% - 26.25rem);
+	position: absolute;
+	top: 50%;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	z-index: 100;
+}
+
+.c-mvLower__titleEn {
+	background-color: #fff;
+	color: #023E78;
+	display: inline-block;
+	font-family: "Fira Sans", sans-serif;
+	font-size: 3.75rem;
+	font-style: italic;
+	font-weight: 500;
+	line-height: normal;
+	padding-left: 0.125rem;
+	text-transform: uppercase;
+}
+
+.c-mvLower__titleJp {
+	background-color: #fff;
+	display: inline-block;
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: normal;
+	margin-top: 0.5rem;
+}
+
 .c-scroll-top {
 	display: inline-block;
 }
@@ -2025,6 +2128,43 @@ a {
 .c-moreButton::after {
 	left: 7.125rem;
 	width: 4rem;
+}
+
+.c-mvLower--01::after {
+	background-image: url(../images/common/mv-lower_01-sp.jpg);
+}
+
+.c-mvLower--02::after {
+	background-image: url(../images/common/mv-lower_02-sp.jpg);
+}
+
+.c-mvLower--03::after {
+	background-image: url(../images/common/mv-lower_03-sp.jpg);
+}
+
+.c-mvLower--04::after {
+	background-image: url(../images/common/mv-lower_04-sp.jpg);
+}
+
+.c-mvLower--05::after {
+	background-image: url(../images/common/mv-lower_05-sp.jpg);
+}
+
+.c-mvLower::before {
+	background-image: url(../images/common/lower-mv-decoration-sp.png);
+	width: 44.2666666667vw;
+}
+
+.c-mvLower__textBlock {
+	left: 5.3333333333vw;
+}
+
+.c-mvLower__titleEn {
+	font-size: 2rem;
+}
+
+.c-mvLower__titleJp {
+	font-size: 1rem;
 }
 
 .c-serviceCard-lower {

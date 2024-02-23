@@ -1,0 +1,13 @@
+<% if(modifier) {
+  modifier = 'c-mvLower--' + modifier;
+} else {
+  modifier = '';
+} %>
+
+<div class="c-mvLower <%= modifier %>">
+  <div class="c-mvLower__bg"></div>
+  <div class="c-mvLower__textBlock">
+    <p class="c-mvLower__titleEn"><%- titleEn %></p>
+    <h1 class="c-mvLower__titleJp"><%= titleJp %></h1>
+  </div>
+</div>
