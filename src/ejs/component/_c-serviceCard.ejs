@@ -1,0 +1,21 @@
+<% if(modifier) { 
+  modifier = 'c-serviceCard--' + modifier; 
+} else { 
+  modifier = ''; 
+} %>
+
+<div class="c-serviceCard <%= modifier %>">
+  <div class="c-serviceCard__imgBlock">
+    <picture class="c-serviceCard__img">
+      <source srcset="./assets/images/top/service-img_<%= img_path %>.webp" type="image/webp">
+      <img src="./assets/images/top/service-img_<%= img_path %>.jpg" alt="<%= alt %>" width="320" height="427" decoding="async" loading="lazy">
+    </picture>
+    <div class="c-serviceCard__content">
+      <% if (title1) { %>
+        <p class="c-serviceCard__title"><%- title1 %></p>
+      <% } %>
+        <p class="c-serviceCard__title"><%- title2 %></p>
+    </div>
+  </div>
+  <p class="c-serviceCard__text"><%- text %></p>
+</div>

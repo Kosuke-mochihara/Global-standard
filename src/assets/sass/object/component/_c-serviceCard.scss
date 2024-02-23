@@ -1,0 +1,85 @@
+@use "global" as *;
+
+.c-serviceCard {
+  width: 100%;
+  max-width: r(320);
+  position: relative;
+
+  @include mq() {
+    margin-left: auto;
+  }
+}
+
+.c-serviceCard::before {
+  position: absolute;
+  content: "";
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: r(110);
+  height: r(124);
+  top: r(-57);
+  right: 0;
+  z-index: 10;
+}
+
+.c-serviceCard--first::before {
+  background-image: url(../images/top/number-img_01.png);
+}
+.c-serviceCard--second::before {
+  background-image: url(../images/top/number-img_02.png);
+}
+.c-serviceCard--third::before {
+  background-image: url(../images/top/number-img_03.png);
+}
+
+
+
+
+.c-serviceCard__imgBlock {
+  position: relative;
+}
+
+.c-serviceCard__img {
+  aspect-ratio: 320 / 427;
+  overflow: hidden;
+  display: block;
+}
+
+.c-serviceCard__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.c-serviceCard__content {
+  z-index: 1;
+  position: absolute;
+  bottom: r(30);
+}
+
+.c-serviceCard__title {
+  font-size: r(28);
+  font-weight: $bold;
+  line-height: normal;
+  color: $blue;
+  display: inline-block;
+  background-color: $white;
+  margin-left: r(-32);
+  text-align: left;
+
+  @include mq() {
+    margin-left: r(-15);
+  }
+}
+
+.c-serviceCard__title:nth-child(2) {
+  margin-top: r(8);
+}
+
+.c-serviceCard__text {
+  margin-top: r(14);
+  font-size: r(14);
+  font-weight: $medium;
+  line-height: calc(24/14);
+}

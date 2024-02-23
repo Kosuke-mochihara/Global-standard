@@ -1667,6 +1667,82 @@ th {
 	text-align: center;
 }
 
+.c-serviceCard {
+	max-width: 20rem;
+	position: relative;
+	width: 100%;
+}
+
+.c-serviceCard::before {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	height: 7.75rem;
+	position: absolute;
+	right: 0;
+	top: -3.5625rem;
+	width: 6.875rem;
+	z-index: 10;
+}
+
+.c-serviceCard--first::before {
+	background-image: url(../images/top/number-img_01.png);
+}
+
+.c-serviceCard--second::before {
+	background-image: url(../images/top/number-img_02.png);
+}
+
+.c-serviceCard--third::before {
+	background-image: url(../images/top/number-img_03.png);
+}
+
+.c-serviceCard__imgBlock {
+	position: relative;
+}
+
+.c-serviceCard__img {
+	aspect-ratio: 320/427;
+	display: block;
+	overflow: hidden;
+}
+
+.c-serviceCard__img img {
+	-o-object-fit: cover;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+.c-serviceCard__content {
+	bottom: 1.875rem;
+	position: absolute;
+	z-index: 1;
+}
+
+.c-serviceCard__title {
+	background-color: #fff;
+	color: #023E78;
+	display: inline-block;
+	font-size: 1.75rem;
+	font-weight: 700;
+	line-height: normal;
+	margin-left: -2rem;
+	text-align: left;
+}
+
+.c-serviceCard__title:nth-child(2) {
+	margin-top: 0.5rem;
+}
+
+.c-serviceCard__text {
+	font-size: 0.875rem;
+	font-weight: 500;
+	line-height: 1.7142857143;
+	margin-top: 0.875rem;
+}
+
 .c-tab__menu {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -2196,6 +2272,14 @@ a {
 
 .c-serviceCard-lower__button {
 	margin-top: 2rem;
+}
+
+.c-serviceCard {
+	margin-left: auto;
+}
+
+.c-serviceCard__title {
+	margin-left: -0.9375rem;
 }
 
 .c-text {
