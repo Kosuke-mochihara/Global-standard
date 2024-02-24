@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.c-pagenaviSingle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-pagenaviSingle__prev,
+.c-pagenaviSingle__next {
+  display: inline-block;
+  padding: r(8) r(16);
+  border: r(1) solid $blue;
+  color: $blue;
+  font-size: r(14);
+  font-weight: $medium;
+  line-height: normal;
+  transition: all .3s ease;
+}
+
+@media (hover: hover) {
+
+  .c-pagenaviSingle__prev:hover,
+  .c-pagenaviSingle__next:hover {
+    background-color: $blue;
+    color: $white;
+  }
+}

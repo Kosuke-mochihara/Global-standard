@@ -1649,6 +1649,30 @@ th {
 	font-weight: bold;
 }
 
+.c-pagenaviSingle {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.c-pagenaviSingle__prev,
+.c-pagenaviSingle__next {
+	border: 0.0625rem solid #023E78;
+	color: #023E78;
+	display: inline-block;
+	font-size: 0.875rem;
+	font-weight: 500;
+	line-height: normal;
+	padding: 0.5rem 1rem;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
 .c-scroll-top {
 	display: inline-block;
 }
@@ -2211,6 +2235,12 @@ th {
 	-webkit-transition: 0.3s;
 	transition: 0.3s;
 	width: 9.0625rem;
+}
+
+.c-pagenaviSingle__prev:hover,
+.c-pagenaviSingle__next:hover {
+	background-color: #023E78;
+	color: #fff;
 }
 
 .p-mockup__link:hover {

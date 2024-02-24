@@ -5,11 +5,11 @@
 
 <body>
   <%- include('./common/_p-header', {page: page}) %>
-  <style>
+  <!-- <style>
     .p-main {
     background-color: red;
     }
-  </style>
+  </style> -->
   <main class="p-main">
 
 
@@ -262,6 +262,18 @@
         </div>
         <div class="p-component__preview">
           <%- include('./component/_c-pagenavi') %>
+        </div>
+      </section>
+
+      <section class="p-component l-section">
+        <div class="p-component__mainTitle">
+          <h2 class="c-heading c-heading--2">個別詳細ページネーション</h2>
+        </div>
+        <div class="p-component__previewTitle">
+          <h3 class="c-heading c-heading--3">.c-pagenaviSingle</h3>
+        </div>
+        <div class="p-component__preview">
+          <%- include('./component/_c-pagenaviSingle') %>
         </div>
       </section>
 
