@@ -1623,6 +1623,32 @@ th {
 	margin-top: 0.5rem;
 }
 
+.wp-pagenavi a,
+.wp-pagenavi span {
+	background-color: #F8F8F8;
+	color: #888;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.8125;
+	margin: 0 0.375rem;
+	padding: 0.5rem 0.9375rem;
+	-webkit-transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
+	white-space: nowrap;
+}
+
+.wp-pagenavi a:hover {
+	background-color: #ccc;
+	border-color: #ccc;
+	color: #fff;
+}
+
+.wp-pagenavi span.current {
+	background-color: #023E78;
+	color: #fff;
+	font-weight: bold;
+}
+
 .c-scroll-top {
 	display: inline-block;
 }
@@ -1699,7 +1725,7 @@ th {
 	-webkit-align-items: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	border-top: 0.0625rem solid #CCCCCC;
+	border-top: 0.0625rem solid #CCC;
 	display: -ms-grid;
 	display: grid;
 	font-size: 0.875rem;
@@ -1709,7 +1735,7 @@ th {
 }
 
 .c-serviceCard-lower__item:last-child {
-	border-bottom: 0.0625rem solid #CCCCCC;
+	border-bottom: 0.0625rem solid #CCC;
 }
 
 .c-serviceCard-lower__dt {
