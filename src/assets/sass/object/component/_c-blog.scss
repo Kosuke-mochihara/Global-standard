@@ -1,0 +1,50 @@
+@use "global" as *;
+
+.c-blog {
+  padding-top: r(20);
+  padding-bottom: r(32);
+
+  @include mq() {
+    padding-top: (16);
+  }
+}
+
+.c-blog__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.c-blog__category {
+  display: inline-block;
+  font-size: r(14);
+  font-weight: $medium;
+  line-height: normal;
+  color: $red;
+  border: r(1) solid $red;
+  padding: r(8) r(24);
+
+  @include mq() {
+    font-size: r(12);
+    padding: r(6) r(20);
+  }
+}
+
+.c-blog__date {
+  display: inline-block;
+  font-size: r(14);
+  font-weight: $medium;
+  line-height: normal;
+  color: $gray;
+}
+
+.c-blog__title {
+  font-size: r(16);
+  font-weight: $bold;
+  line-height: normal;
+  margin-top: r(16);
+
+  @include mq() {
+    font-size: r(14);
+  }
+}
