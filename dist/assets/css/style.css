@@ -873,6 +873,82 @@ th {
 	margin-block: 2.8125rem;
 }
 
+.c-aboutItem {
+	padding-bottom: 8.75rem;
+}
+
+.c-aboutItem__contents {
+	position: relative;
+}
+
+.c-aboutItem__img {
+	aspect-ratio: 1100/353;
+	display: block;
+	overflow: hidden;
+}
+
+.c-aboutItem__img img {
+	-o-object-fit: cover;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+.c-aboutItem__content {
+	content: "";
+	left: 1.25rem;
+	position: absolute;
+	top: 1.25rem;
+}
+
+.c-aboutItem__titleEn {
+	color: #fff;
+	font-family: "Fira Sans", sans-serif;
+	font-size: 6.25rem;
+	font-style: italic;
+	font-weight: 500;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.c-aboutItem__titleJp {
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.c-aboutItem__wrapper {
+	background-color: #fff;
+	bottom: -8.75rem;
+	-webkit-box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.16);
+	        box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.16);
+	content: "";
+	left: 50%;
+	margin-inline: auto;
+	max-width: 43rem;
+	padding: 2rem 2.5rem 1.875rem;
+	position: absolute;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	width: 100%;
+}
+
+.c-aboutItem__title {
+	color: #023E78;
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: normal;
+	text-align: center;
+}
+
+.c-aboutItem__text {
+	font-size: 0.875rem;
+	font-weight: 500;
+	line-height: 1.7142857143;
+	margin-top: 1.875rem;
+}
+
 .c-accordion {
 	border: 0.125rem solid #1A1A1A;
 }
@@ -2318,6 +2394,38 @@ a {
 	max-width: 37.5rem;
 	padding-left: 5.3333%;
 	padding-right: 5.3333%;
+}
+
+.c-aboutItem {
+	margin: 0 calc(50% - 50vw);
+	padding-bottom: 12.125rem;
+	width: 100vw;
+}
+
+.c-aboutItem__img {
+	aspect-ratio: 375/281;
+}
+
+.c-aboutItem__titleEn {
+	font-size: 3.25rem;
+}
+
+.c-aboutItem__titleJp {
+	font-size: 1rem;
+}
+
+.c-aboutItem__wrapper {
+	bottom: -12.125rem;
+	padding: 1.25rem;
+	width: 89.3333333333vw;
+}
+
+.c-aboutItem__title {
+	font-size: 1.25rem;
+}
+
+.c-aboutItem__text {
+	font-size: 1.125rem;
 }
 
 .c-applicationButton {

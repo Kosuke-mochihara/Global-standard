@@ -1,0 +1,18 @@
+<div class="c-aboutItem">
+  <div class="c-aboutItem__contents">
+    <picture class=".c-aboutItem__img">
+       <source srcset="./assets/images/about/about-img_<%= img_path %>-sp.webp" media="(max-width: 768px)" type="image/webp">
+       <source srcset="./assets/images/about/about-img_<%= img_path %>-sp.jpg" media="(max-width: 768px)">
+       <source srcset="./assets/images/about/about-img_<%= img_path %>.webp" type="image/webp">
+       <img src="./assets/images/about/about-img_<%= img_path %>.jpg" alt="<%= alt %>" width="1100" height="353" decoding="async" loading="lazy">
+    </picture>
+    <div class="c-aboutItem__content">
+      <p class="c-aboutItem__titleEn"><%= titleEn %></p>
+      <h2 class="c-aboutItem__titleJp"><%= titleJp %></h2>
+    </div>
+    <div class="c-aboutItem__wrapper">
+      <h3 class="c-aboutItem__title"><%- title %></h3>
+      <p class="c-aboutItem__text"><%= text %></p>
+    </div>
+  </div>
+</div>
