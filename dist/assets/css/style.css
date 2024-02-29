@@ -1317,6 +1317,62 @@ th {
 	transition: fill 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
+.c-company {
+	padding: 3.75rem 2.5rem 5rem;
+}
+
+.c-company__title {
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.c-company__dl {
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: normal;
+	margin-top: 3.75rem;
+}
+
+.c-company__item {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 12.5rem 1fr;
+	grid-template-columns: 12.5rem 1fr;
+}
+
+.c-company__dt {
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	border-top: 0.0625rem solid #023E78;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	padding-left: 2rem;
+}
+
+.c-company__item:last-child .c-company__dt {
+	border-bottom: 0.0625rem solid #023E78;
+}
+
+.c-company__dd {
+	border-top: 0.0625rem solid #E8EAEC;
+	padding-block: 1.5rem;
+	padding-left: 2.25rem;
+}
+
+.c-company__item:last-child .c-company__dd {
+	border-bottom: 0.0625rem solid #E8EAEC;
+}
+
+.c-company__lists {
+	list-style: disc;
+	padding-left: 1rem;
+}
+
 .c-drawer__button {
 	-webkit-box-align: center;
 	-webkit-align-items: center;
@@ -2468,6 +2524,31 @@ a {
 
 .c-caseCard__icon {
 	margin-right: 0;
+}
+
+.c-company {
+	padding: 2.5rem 1.25rem;
+}
+
+.c-company__dl {
+	font-size: 0.875rem;
+	margin-top: 2.5rem;
+}
+
+.c-company__item {
+	-ms-grid-columns: 6.5rem 1fr;
+	grid-template-columns: 6.5rem 1fr;
+}
+
+.c-company__dt {
+	padding-left: 0;
+}
+
+.c-company__dd {
+	overflow-wrap: break-word; /* 単語の途中で折り返しが可能に */
+	padding-block: 1rem;
+	padding-left: 1.5rem;
+	word-break: break-all; /* 長い単語やURLが折り返されるように */
 }
 
 .c-lower-head {

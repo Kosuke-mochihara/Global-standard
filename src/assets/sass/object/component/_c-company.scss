@@ -1,0 +1,73 @@
+@use "global" as *;
+
+.c-company {
+  padding: r(60) r(40) r(80);
+
+  @include mq() {
+    padding: r(40) r(20);
+  }
+}
+
+.c-company__title {
+  font-size: r(24);
+  font-weight: $bold;
+  line-height: normal;
+}
+
+.c-company__dl {
+  margin-top: r(60);
+  font-size: r(16);
+  font-weight: $medium;
+  line-height: normal;
+
+  @include mq() {
+    margin-top: r(40);
+    font-size: r(14);
+  }
+}
+
+.c-company__item {
+  display: grid;
+  grid-template-columns: r(200) 1fr;
+
+  @include mq() {
+    grid-template-columns: r(104) 1fr;
+  }
+}
+
+.c-company__dt {
+  padding-left: r(32);
+  border-top: r(1) solid $blue;
+  display: flex;
+  align-items: center;
+
+  @include mq() {
+    padding-left: 0;
+  }
+}
+
+.c-company__item:last-child .c-company__dt {
+  border-bottom: r(1) solid $blue;
+}
+
+.c-company__dd {
+  padding-left: r(36);
+  padding-block: r(24);
+  border-top: r(1) solid $gray3;
+
+  @include mq() {
+    padding-left: r(24);
+    padding-block: r(16);
+    word-break: break-all; /* 長い単語やURLが折り返されるように */
+    overflow-wrap: break-word; /* 単語の途中で折り返しが可能に */
+  }
+}
+
+.c-company__item:last-child .c-company__dd {
+  border-bottom: r(1) solid $gray3;
+}
+
+.c-company__lists {
+  list-style: disc;
+  padding-left: r(16);
+}
