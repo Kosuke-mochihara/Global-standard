@@ -1541,6 +1541,90 @@ th {
 	padding: 0.3125rem 0 0.3125rem 0.625rem;
 }
 
+.c-introduction {
+	grid-column-gap: 2.5rem;
+	-moz-column-gap: 2.5rem;
+	-webkit-column-gap: 2.5rem;
+	        column-gap: 2.5rem;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 15rem;
+	grid-template-columns: 1fr 15rem;
+}
+
+.c-introduction__header {
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.c-introduction__job {
+	font-size: 0.875rem;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.c-introduction__name {
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: normal;
+	margin-left: 1.25rem;
+}
+
+.c-introduction__text {
+	font-size: 0.875rem;
+	font-weight: 500;
+	line-height: 1.7142857143;
+	margin-top: 1.75rem;
+}
+
+.c-introduction__snsItmes {
+	grid-column-gap: 1.5rem;
+	-moz-column-gap: 1.5rem;
+	-webkit-column-gap: 1.5rem;
+	        column-gap: 1.5rem;
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: (2rem)[3];
+	grid-template-columns: repeat(3, 2rem);
+	margin-top: 1.875rem;
+}
+
+.c-introduction__snsItem {
+	display: inline-block;
+}
+
+.c-introduction__nsnImg {
+	aspect-ratio: 32/32;
+	display: block;
+	overflow: hidden;
+}
+
+.c-introduction__snsImg img {
+	-o-object-fit: cover;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+.c-introduction__img {
+	aspect-ratio: 240/320;
+	display: block;
+	overflow: hidden;
+}
+
+.c-introduction__img img {
+	-o-object-fit: cover;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
 .c-list,
 .c-list li ul {
 	list-style-type: disc;
@@ -2549,6 +2633,36 @@ a {
 	padding-block: 1rem;
 	padding-left: 1.5rem;
 	word-break: break-all; /* 長い単語やURLが折り返されるように */
+}
+
+.c-introduction {
+	-moz-column-gap: 0;
+	-webkit-column-gap: 0;
+	        column-gap: 0;
+	-ms-grid-columns: 1fr;
+	grid-template-columns: 1fr;
+}
+
+.c-introduction__contents {
+	margin-top: 1.375rem;
+	-webkit-box-ordinal-group: 3;
+	-webkit-order: 2;
+	    -ms-flex-order: 2;
+	        order: 2;
+}
+
+.c-introduction__text {
+	margin-top: 1rem;
+}
+
+.c-introduction__imgBlock {
+	margin-inline: auto;
+	max-width: min(18.75rem, 64vw);
+	-webkit-box-ordinal-group: 2;
+	-webkit-order: 1;
+	    -ms-flex-order: 1;
+	        order: 1;
+	width: 100%;
 }
 
 .c-lower-head {
