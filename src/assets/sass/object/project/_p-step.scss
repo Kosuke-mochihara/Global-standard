@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.p-step {}
+
+.p-step__items {
+  display: flex;
+
+  @include mq() {
+    flex-direction: column;
+  }
+}
+
+.p-step__item {}
+
+.c-step__text--accent {}

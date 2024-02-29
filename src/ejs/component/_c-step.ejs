@@ -1,0 +1,16 @@
+<% if(modifier) {
+  modifier = 'c-step--' + modifier;
+} else {
+  modifier = '';
+} %>
+
+<div class="c-step <%= modifier %>">
+  <div class="c-step__header">
+    <p class="c-step__step">step</p>
+    <p class="c-step__number"><%= number %></p>
+  </div>
+  <div class="c-step__content">
+    <h3 class="c-step__title"><%= title %></h3>
+    <p class="c-step__text"><%- text %></p>
+  </div>
+</div>

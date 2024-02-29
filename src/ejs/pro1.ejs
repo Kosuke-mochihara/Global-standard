@@ -2,11 +2,27 @@
 <!DOCTYPE html>
 <html lang="ja">
 <%- include('./common/_head', {meta: data.pageMeta[page]}) %>
-
+<style>
+  .p-main {
+  background-color: blue;
+  }
+</style>
 <body>
   <%- include('./common/_p-header', {page: page}) %>
   <main class="p-main">
     <div class="l-inner">
+
+      <section class="p-component l-section">
+        <div class="p-component__mainTitle">
+          <h2 class="c-heading c-heading--2">ステップ（複数）</h2>
+        </div>
+        <div class="p-component__previewTitle">
+          <h3 class="c-heading c-heading--3">.p-step</h3>
+        </div>
+        <div class="p-component__preview">
+          <%- include('./project/_p-step' ) %>
+        </div>
+      </section>
       
     </div>
   </main>

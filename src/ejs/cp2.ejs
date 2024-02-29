@@ -2,7 +2,11 @@
 <!DOCTYPE html>
 <html lang="ja">
 <%- include('./common/_head', {meta: data.pageMeta[page]}) %>
-
+  <style>
+    .p-main {
+    background-color: blue;
+    }
+  </style>
 <body>
   <%- include('./common/_p-header', {page: page}) %>
   <main class="p-main">
@@ -36,6 +40,41 @@
             text: "アメリカ出身。<br>メジャーリーグ球団「ニューヨークヤンキース」の通訳担当として7年間チームに在籍。<br>数多くの契約交渉の経験を活かし、国際ビジネスにおけるコミュニケーションのマナーから応用までお伝えいたします。",
             img_path: "03",
             alt: "取締役"
+          }) %>
+        </div>
+      </section>
+
+      <section class="p-component l-section">
+        <div class="p-component__mainTitle">
+          <h2 class="c-heading c-heading--2">導入の流れ</h2>
+        </div>
+        <div class="p-component__previewTitle">
+          <h3 class="c-heading c-heading--3">.c-step</h3>
+        </div>
+        <div class="p-component__preview">
+          <%- include('./component/_c-step',{
+            modifier: "01",
+            number: "01",
+            title: "お問い合わせ",
+            text: "お問い合わせフォームより必要事項を誤入力の上、お申し込みください"
+          }) %>
+          <%- include('./component/_c-step',{
+            modifier: "02",
+            number: "02",
+            title: "ご提案",
+            text: "ご依頼の背景をお伺いし、必要なスキルと習得期間から最適なプランをご提案いたします"
+          }) %>
+          <%- include('./component/_c-step',{
+            modifier: "03",
+            number: "03",
+            title: "日程調整",
+            text: "研修日数と開始日を調整し、今後の流れ全体の段取りをご提案いたします"
+          }) %>
+          <%- include('./component/_c-step',{
+            modifier: "04",
+            number: "04",
+            title: "研修開始",
+            text: "研修当日はお約束のお時間の30分前に講師が伺います。<br><span class='c-step__text--accent'>※キャンセルのご連絡は2日前までにお願いいたします</span>"
           }) %>
         </div>
       </section>

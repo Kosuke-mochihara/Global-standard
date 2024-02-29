@@ -1,0 +1,154 @@
+@use "global" as *;
+
+.c-step {
+  width: 100%;
+  max-width: r(275);
+
+  @include mq() {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.c-step__content::before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top: r(104) solid transparent;
+  border-bottom: r(104) solid transparent;
+  border-right: 0;
+  position: absolute;
+  content: "";
+  right: r(-23);
+  bottom: 0;
+  z-index: 1;
+
+  @include mq() {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    width: 100%;
+    border-bottom: 0;
+    right: r(0);
+    bottom: r(-104);
+  }
+}
+
+.c-step--01 .c-step__content::before {
+  border-left: r(23) solid $white;
+
+  @include mq() {
+    clip-path: polygon(100% 0, 0 0, 51% 18%);
+    background-color: $white;
+  }
+}
+
+.c-step--02 .c-step__content::before {
+  border-left: r(23) solid $gray4;
+
+  @include mq() {
+    clip-path: polygon(100% 0, 0 0, 51% 18%);
+    background-color: $gray4;
+  }
+}
+
+.c-step--03 .c-step__content::before {
+  border-left: r(23) solid $gray5;
+
+  @include mq() {
+    clip-path: polygon(100% 0, 0 0, 51% 18%);
+    background-color: $gray5;
+  }
+}
+
+.c-step__header {
+  color: $yellow;
+  display: flex;
+  font-family: $sub-font-family;
+  font-style: italic;
+  font-weight: $medium;
+  align-items: baseline;
+
+  @include mq() {
+    flex-direction: column;
+  }
+}
+
+.c-step__step {
+  text-transform: uppercase;
+  font-size: r(20);
+}
+
+.c-step__number {
+  line-height: normal;
+  margin-left: r(7);
+  font-size: r(40);
+}
+
+.c-step__content {
+  padding: r(46) r(24) r(47) r(43);
+  margin-top: r(4);
+  height: r(209);
+  position: relative;
+
+  @include mq() {
+    padding: r(22) r(20) r(23);
+    width: 84%;
+    margin-top: 0;
+    height: 100%;
+  }
+}
+
+.c-step--01 .c-step__content {
+  background-color: $white;
+}
+
+.c-step--02 .c-step__content {
+  background-color: $gray4;
+}
+
+.c-step--03 .c-step__content {
+  background-color: $gray5;
+}
+
+.c-step--04 .c-step__content {
+  background-color: $gray6;
+}
+
+.c-step__title {
+  font-size: r(20);
+  font-weight: $bold;
+  line-height: normal;
+  color: $blue;
+
+  @include mq() {
+    font-size: r(18);
+    text-align: center;
+  }
+}
+
+.c-step--02 .c-step__title,
+.c-step--03 .c-step__title,
+.c-step--04 .c-step__title {
+  @include mq() {
+    margin-top: r(16);
+  }
+}
+
+.c-step__text {
+  font-size: r(14);
+  font-weight: $medium;
+  line-height: calc(24/14);
+  width: 100%;
+  max-width: r(200);
+  margin-top: r(17);
+
+  @include mq() {
+    max-width: 100%;
+  }
+}
+
+.c-step__text--accent {
+  color: $red;
+}
