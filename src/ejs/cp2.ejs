@@ -2,11 +2,11 @@
 <!DOCTYPE html>
 <html lang="ja">
 <%- include('./common/_head', {meta: data.pageMeta[page]}) %>
-  <style>
+  <!-- <style>
     .p-main {
     background-color: blue;
     }
-  </style>
+  </style> -->
 <body>
   <%- include('./common/_p-header', {page: page}) %>
   <main class="p-main">
@@ -77,6 +77,53 @@
             text: "研修当日はお約束のお時間の30分前に講師が伺います。<br><span class='c-step__text--accent'>※キャンセルのご連絡は2日前までにお願いいたします</span>"
           }) %>
         </div>
+      </section>
+      
+
+      <section class="p-component l-section">
+        <div class="p-component__mainTitle">
+          <h2 class="c-heading c-heading--2">アコーディオン</h2>
+        </div>
+        <div class="p-component__previewTitle">
+          <h3 class="c-heading c-heading--3">.c-accordion</h3>
+        </div>
+        <div class="p-component__preview">
+          <%- include('./component/_c-accordion', {
+            title: "どんな教材を使うのでしょうか？",
+            text: "録音しても構いません。語学学習において、言語に触れている時間が長いほど早く上達します。ぜひご自宅での復習にお役立てください。<br>ただし、原則として第三者への配布は禁止しておりますので、ご了承ください。",
+            icon: "",
+            modifier: "type2"
+          }) %>
+          <%- include('./component/_c-accordion', {
+            title: "講義中のレッスン内容は録音してもよいのでしょうか？",
+            text: "録音しても構いません。語学学習において、言語に触れている時間が長いほど早く上達します。ぜひご自宅での復習にお役立てください。<br>ただし、原則として第三者への配布は禁止しておりますので、ご了承ください。",
+            icon: "",
+            modifier: "type2"
+          }) %>
+          <%- include('./component/_c-accordion', {
+            title: "講師はどんな人が担当しているのでしょうか？",
+            text: "録音しても構いません。語学学習において、言語に触れている時間が長いほど早く上達します。ぜひご自宅での復習にお役立てください。<br>ただし、原則として第三者への配布は禁止しておりますので、ご了承ください。",
+            icon: "",
+            modifier: "type2"
+          }) %>
+          <%- include('./component/_c-accordion', {
+            title: "講師が合わないと感じた場合、変更してもらえるのでしょうか？",
+            text: "録音しても構いません。語学学習において、言語に触れている時間が長いほど早く上達します。ぜひご自宅での復習にお役立てください。<br>ただし、原則として第三者への配布は禁止しておりますので、ご了承ください。",
+            icon: "",
+            modifier: "type2"
+          }) %>
+          <%- include('./component/_c-accordion', {
+            title: "講義当日のキャンセルは可能でしょうか？",
+            text: "録音しても構いません。語学学習において、言語に触れている時間が長いほど早く上達します。ぜひご自宅での復習にお役立てください。<br>ただし、原則として第三者への配布は禁止しておりますので、ご了承ください。",
+            icon: "",
+            modifier: "type2"
+          }) %>
+          <%- include('./component/_c-accordion', {
+            title: "途中退会した場合、返金は可能でしょうか？",
+            text: "録音しても構いません。語学学習において、言語に触れている時間が長いほど早く上達します。ぜひご自宅での復習にお役立てください。<br>ただし、原則として第三者への配布は禁止しておりますので、ご了承ください。",
+            icon: "",
+            modifier: "type2"
+          }) %>
       </section>
       
     </div>

@@ -950,7 +950,10 @@ th {
 }
 
 .c-accordion {
-	border: 0.125rem solid #1A1A1A;
+	border-bottom: 0.0625rem solid #ddd;
+	margin-inline: auto;
+	max-width: 43rem;
+	width: 100%;
 }
 
 .c-accordion summary::-webkit-details-marker {
@@ -962,21 +965,28 @@ th {
 	-webkit-align-items: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	background: #1A1A1A;
-	color: #fff;
+	background-color: #fff;
 	cursor: pointer;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	font-size: 1.125rem;
+	font-size: 1.25rem;
+	font-weight: 700;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	padding: 1.25rem 2.5rem;
+	line-height: normal;
+	padding-block: 2rem;
 	text-decoration: none;
+	-webkit-transition: color 0.2s ease;
+	transition: color 0.2s ease;
 	width: 100%;
+}
+
+.c-accordion__title.is-active {
+	color: #E61264;
 }
 
 .c-accordion__icon i {
@@ -1003,7 +1013,13 @@ th {
 }
 
 .c-accordion__content-inner {
-	padding: 1.25rem 2.5rem;
+	font-size: 0.875rem;
+	font-weight: 500;
+	line-height: 1.7142857143;
+	margin-inline: auto;
+	max-width: 36.75rem;
+	padding-bottom: 1.875rem;
+	width: 100%;
 }
 
 /* .c-accordion--type1 */
@@ -1027,17 +1043,17 @@ th {
 
 .c-accordion--type2 .c-accordion__icon::before,
 .c-accordion--type2 .c-accordion__icon::after {
-	background: #fff;
+	background-color: #1A1A1A;
 	content: "";
 	height: 0.125rem;
 	position: absolute;
-	right: 1.875rem;
+	right: 0.75rem;
 	top: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	        transform: translate(-50%, -50%);
 	-webkit-transition: 0.3s all;
 	transition: 0.3s all;
-	width: 0.9375rem;
+	width: 1.3125rem;
 }
 
 .c-accordion--type2 .c-accordion__icon::after {
@@ -1046,8 +1062,18 @@ th {
 }
 
 .c-accordion--type2.is-open .c-accordion__icon::after {
-	-webkit-transform: translate(-50%, -50%) rotate(0deg);
-	        transform: translate(-50%, -50%) rotate(0deg);
+	-webkit-transform: translate(-50%, -50%) rotate(-45deg);
+	        transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.c-accordion--type2.is-open .c-accordion__icon::before {
+	-webkit-transform: translate(-50%, -50%) rotate(45deg);
+	        transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.c-accordion--type2 .c-accordion__icon.is-active::before,
+.c-accordion--type2 .c-accordion__icon.is-active::after {
+	background-color: #E61264;
 }
 
 .c-applicationButton {
@@ -2673,6 +2699,21 @@ a {
 
 .c-aboutItem__text {
 	font-size: 1.125rem;
+}
+
+.c-accordion__title {
+	font-size: 1rem;
+	padding-block: 1rem;
+	padding-right: 4.5625rem;
+}
+
+.c-accordion__content-inner {
+	padding-bottom: 1rem;
+}
+
+.c-accordion--type2 .c-accordion__icon::before,
+.c-accordion--type2 .c-accordion__icon::after {
+	right: 0.5rem;
 }
 
 .c-applicationButton {

@@ -1,31 +1,52 @@
 @use "global" as *;
+
 .c-accordion {
-  border: r(2) solid $base-color;
+  border-bottom: r(1) solid $gray7;
+  max-width: r(688);
+  width: 100%;
+  margin-inline: auto;
 }
+
 .c-accordion summary::-webkit-details-marker {
   display: none;
 }
+
 .c-accordion__title {
-  padding: r(20) r(40);
-  font-size: r(18);
-  background: $base-color;
-  color: $white;
+  padding-block: r(32);
+  font-size: r(20);
+  font-weight: $bold;
+  line-height: normal;
+  background-color: $white;
   text-decoration: none;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  transition: color 0.2s ease;
+
+  @include mq() {
+    font-size: r(16);
+    padding-right: r(73);
+    padding-block: r(16);
+  }
 }
+
+.c-accordion__title.is-active {
+  color: $red;
+}
+
 .c-accordion__icon i {
   transition: transform 0.3s;
   right: 0;
   position: relative;
   font-size: r(16);
 }
+
 .c-accordion.is-open .c-accordion__icon i {
   transform: rotate(-180deg);
 }
+
 .c-accordion__content {
   font-size: r(18);
   background: $white;
@@ -33,8 +54,19 @@
   text-decoration: none;
   overflow: hidden;
 }
+
 .c-accordion__content-inner {
-  padding: r(20) r(40);
+  width: 100%;
+  max-width: r(588);
+  margin-inline: auto;
+  font-size: r(14);
+  font-weight: $medium;
+  line-height: calc(24/14);
+  padding-bottom: r(30);
+
+  @include mq() {
+    padding-bottom: r(16);
+  }
 }
 
 /* .c-accordion--type1 */
@@ -43,6 +75,7 @@
   color: $base-color;
   transition: border 0.3s;
 }
+
 .c-accordion--type1 .c-accordion__icon i {
   font-size: r(20);
 }
@@ -51,21 +84,37 @@
 .c-accordion--type2 .c-accordion__title {
   position: relative;
 }
+
 .c-accordion--type2 .c-accordion__icon::before,
 .c-accordion--type2 .c-accordion__icon::after {
   content: "";
   position: absolute;
   top: 50%;
-  right: r(30);
-  width: r(15);
+  right: r(12);
+  width: r(21);
   height: r(2);
-  background: $white;
+  background-color: $base-color;
   transform: translate(-50%, -50%);
   transition: 0.3s all;
+
+  @include mq() {
+    right: r(8);
+  }
 }
+
 .c-accordion--type2 .c-accordion__icon::after {
   transform: translate(-50%, -50%) rotate(-90deg);
 }
+
 .c-accordion--type2.is-open .c-accordion__icon::after {
-  transform: translate(-50%, -50%) rotate(0deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.c-accordion--type2.is-open .c-accordion__icon::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.c-accordion--type2 .c-accordion__icon.is-active::before,
+.c-accordion--type2 .c-accordion__icon.is-active::after {
+  background-color: $red;
 }

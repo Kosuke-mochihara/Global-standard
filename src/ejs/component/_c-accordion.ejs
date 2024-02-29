@@ -1,14 +1,11 @@
-<% const modifierClass = modifier === "" ?  "" : " c-accordion--"  + modifier; %>
+<% const modifierClass = modifier === "" ? "" : " c-accordion--" + modifier; %>
+
 <details class="c-accordion js-accordion<%= modifierClass %>">
   <summary class="c-accordion__title js-accordion-summary">
     <%= title %>
-    <span class="c-accordion__icon">
-      <%- icon %>
-    </span>
+    <span class="c-accordion__icon"> <%- icon %> </span>
   </summary>
   <div class="c-accordion__content js-accordion-content">
-    <div class="c-accordion__content-inner">
-      <%= text %>
-    </div>
+    <div class="c-accordion__content-inner"><%- text %></div>
   </div>
 </details>

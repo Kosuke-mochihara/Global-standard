@@ -4381,6 +4381,15 @@ function accordion() {
   };
   accordionGsap();
 }
+document.addEventListener('DOMContentLoaded', function () {
+  var accordions = document.querySelectorAll('.js-accordion');
+  accordions.forEach(function (accordion) {
+    accordion.querySelector('.js-accordion-summary').addEventListener('click', function () {
+      // .c-accordion__titleに直接アクセスするために、thisを使用
+      this.classList.toggle('is-active');
+    });
+  });
+});
 
 /***/ }),
 
